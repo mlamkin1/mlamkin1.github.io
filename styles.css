@@ -21,14 +21,6 @@ body {
   margin: 0;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   font-family: "Montserrat Medium";
   max-width: 40ch;
