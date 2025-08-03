@@ -55,13 +55,13 @@ body {
 
   /* --------------------------------- Headers -------------------------------- */
 
-  .h1 {
+  h1 {
     color: black;
     font-size: large;
     text-align: center;
   }
 
-  .h2 {
+  h2 {
     color: black;
     font-size: medium;
   }
