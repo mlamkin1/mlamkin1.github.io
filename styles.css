@@ -3,8 +3,8 @@
 /* ---------------------------------- Body ---------------------------------- */
 
 body {
-    background-color: #19747e;
-    color: #e2e2e2;
+    background-color: #e2e2e2;
+    color: #d1e8e2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #d1e8e2;
+    background-color: #19747e;
     overflow: hidden;
     border-radius: 10px;
   }
@@ -37,8 +37,8 @@ body {
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #53eec5;
-    color: #ffffff00;
+    background-color: #a9d6e5;
+    color: #d1e8e2;
     border-radius: 10px;
   }
   
