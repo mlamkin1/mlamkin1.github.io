@@ -55,3 +55,13 @@ body {
   }
 
   /* --------------------------------- Headers -------------------------------- */
+
+  .h1 {
+    color: black;
+    font-size: large;
+  }
+
+  .h2 {
+    color: black;
+    font-size: medium;
+  }
