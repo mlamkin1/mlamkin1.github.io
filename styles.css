@@ -1,6 +1,17 @@
+/* Hex codes: soft mint green #D1E8E2, deep teal #19747E, light sky blue #A9D6E5, light gray #E2E2E2 */
+
+/* ---------------------------------- Body ---------------------------------- */
+
+body {
+    background-color: #19747e;
+    color: #e2e2e2;
+}
+
+/* ----------------------------- Navigation bar ----------------------------- */
+
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #d1e8e2;
     overflow: hidden;
   }
   
@@ -23,8 +34,8 @@
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #53eec5;
+    color: #ffffff00;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
