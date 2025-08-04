@@ -1,13 +1,11 @@
 /* Hex codes: soft mint green #D1E8E2, deep teal #19747E, light sky blue #A9D6E5, light gray #E2E2E2 */
 
-/* --------------------------------- Header --------------------------------- */
-
-head {
-    color: black;
-    background-color: white;
-}
-
 /* ---------------------------------- Body ---------------------------------- */
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     background-color: #e2e2e2;
@@ -64,4 +62,17 @@ body {
   h2 {
     color: black;
     font-size: medium;
+  }
+
+  /* --------------------------------- Classes -------------------------------- */
+
+  .home-feature {
+    position:fixed; top:0; z-index:0; width:100%; padding-top:50%; background: url("resources/portrait.jpg") center center no-repeat;
+    -webkit-background-size:250%;
+       -moz-background-size:250%;
+         -o-background-size:250%;
+            background-size:250%;
+    -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
+       -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
+            box-shadow: 0 -50px 20px -20px #232323 inset;
   }
