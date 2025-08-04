@@ -76,3 +76,10 @@ body {
        -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
             box-shadow: 0 -50px 20px -20px #232323 inset;
   }
+
+  .content {
+    position: relative; 
+    z-index:1; 
+    padding-top:45%; 
+    width:90%; 
+    margin:0 auto;}
