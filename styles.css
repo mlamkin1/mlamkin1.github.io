@@ -5,81 +5,133 @@
 body, html {
     padding: 0;
     margin: 0;
+    width: 100vw;
 }
 
 body {
-    background-color: #e2e2e2;
+    background-color: #232323;
+    color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 /* ----------------------------- Navigation bar ----------------------------- */
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #19747e;
+    backdrop-filter: blur(4px);
     overflow: hidden;
     border-radius: 10px;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease; /* smooth animation */
+}
+
+.topnav.full-width {
+    max-width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.topnav.shrink {
+    max-width: 700px;
+    padding: 0 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: #fff;
+    border-color: #fff;
+    border-style: solid;
     border-radius: 10px;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
     background-color: #a9d6e5;
     color: #d1e8e2;
     border-radius: 10px;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
     display: none;
-  }
+}
 
-  /* --------------------------------- Headers -------------------------------- */
+/* --------------------------------- Headers -------------------------------- */
 
-  h1 {
-    color: black;
+h1 {
+    color: #fff;
     font-size: large;
     text-align: center;
-  }
+}
 
-  h2 {
-    color: black;
-    font-size: medium;
-  }
+h2 {
+color: #fff;
+font-size: medium;
+}
 
-  /* --------------------------------- Classes -------------------------------- */
+/* --------------------------------- Classes -------------------------------- */
 
-  .home-feature {
-    position:fixed; top:0; z-index:0; width:100%; padding-top:50%; background: url("resources/portrait.jpg") center center no-repeat;
-    -webkit-background-size:250%;
-       -moz-background-size:250%;
-         -o-background-size:250%;
-            background-size:250%;
-    -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
-       -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
-            box-shadow: 0 -50px 20px -20px #232323 inset;
-  }
+.home-feature {
+position:fixed; top:0; z-index:0; width:100%; padding-top:90%; padding-bottom: 50%; background: url("resources/portrait.jpg") center center no-repeat;
+-webkit-background-size:250%;
+    -moz-background-size:250%;
+        -o-background-size:250%;
+        background-size:250%;
+-webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
+    -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
+        box-shadow: 0 -50px 20px -20px #232323 inset;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+}
 
-  .content {
-    position: relative; 
-    z-index:1; 
-    padding-top:45%; 
-    width:90%; 
-    margin:0 auto;}
+.content {
+position: relative; 
+z-index:1; 
+padding-top:45%; 
+width:90%; 
+margin:0 auto;}
+
+.opaque {position:absolute; top:0; left:0; right:0; bottom:0; opacity:0; background:#d2d6f1;}
+.lt-ie9 .opaque {display:none;}
+
+.scroll-prompt {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #a9d6e5; /* light sky blue from your palette */
+    margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    animation: bounce 1.5s infinite; /* little bounce to attract attention */
+}
+
+/* Fade out when hidden */
+.scroll-prompt.hidden {
+    opacity: 0;
+    pointer-events: none; /* so it’s not clickable */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+}
